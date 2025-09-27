@@ -1,0 +1,284 @@
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: #f5ebd7;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 80px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-bottom: 4px solid #e89058;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0px 10px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav ul a:hover {
+  background-color: #b3a9a3;
+
+  border-radius: 10px;
+}
+
+.leftside ul {
+  align-items: center;
+}
+.rightside ul {
+}
+
+/* HERO SECTON */
+main {
+  margin: 0px auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: 80%;
+  margin: 0px auto;
+}
+
+#hero-text {
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+#cta-btn {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  background-color: #ffa800;
+}
+#cta-btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #f8cc73;
+}
+
+#circle {
+  width: 500px;
+  position: absolute;
+}
+#cat {
+  width: 600px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+/* SECOND SECTION */
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+  position: relative;
+}
+
+#section-2 h1 {
+  font-weight: bolder;
+  font-size: 2.8rem;
+  text-align: center;
+  max-width: 50%;
+}
+
+#person-img {
+  width: 400px;
+  border: 8px solid #ffa800;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#pawpics {
+  display: flex;
+}
+
+#pawpics img {
+  width: 80px;
+}
+#pawpics-left {
+  position: absolute;
+  top: 25%;
+  left: 100px;
+}
+#pawpics-right {
+  position: absolute;
+  top: 25%;
+  right: 110px;
+}
+
+#reviews {
+  display: flex;
+  margin-top: 100px;
+  padding: 0px 40px;
+}
+
+.review {
+  margin: 0px 10px;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 20px 20px;
+  border: 3px solid gainsboro;
+}
+.quote-sign {
+  display: block;
+  font-size: 8rem;
+  margin-bottom: -60px;
+  margin-left: -20px;
+  color: darkgray;
+}
+
+.reviewer-details {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.reviewer-details img {
+  height: 40px;
+  margin-right: 15px;
+  border: 3px solid #ffa800;
+  border-radius: 50%;
+}
+
+/* THIRD SECTION */
+
+#section-3 {
+  margin: 50px 0px;
+}
+
+#section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#cat-in-bowl {
+  width: 800px;
+  z-index: 2;
+}
+#section3-content {
+  background-color: #e89058;
+  border: 3px solid #a87353;
+  padding-bottom: 50px;
+  position: absolute;
+  top: 250px;
+  z-index: 1;
+}
+#facts {
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fact {
+  padding: 40px;
+  font-size: 1.5rem;
+  color: #f5ebd7;
+}
+.fact span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 3px solid #895f46;
+  background-color: #a87353;
+  transform: rotate(-10deg);
+}
+.fact p {
+  margin-left: 30px;
+}
+
+/* FOURTH SECTION */
+#section-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 600px;
+  min-height: 100vh;
+}
+
+#section4-left {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 40px 80px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: rgb(101, 101, 101)
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0px 10px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+footer ul a:hover {
+  background-color: #b3a9a3;
+  border-radius: 10px;
+}
+
+.leftside ul {
+  align-items: center;
+}
+.rightside ul {
+}
