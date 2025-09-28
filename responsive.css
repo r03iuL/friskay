@@ -1,4 +1,195 @@
 /* RESPONSIVE DESIGN */
+/* Tablet devices */
+
+@media (max-width: 992px) {
+  /* Nav bar */
+  #nav-toggle {
+    display: block;
+    z-index: 99;
+  }
+
+  nav {
+    padding: 40px 10px 20px 0px;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  #nav-leftside a {
+    display: none;
+  }
+  #nav-rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    position: absolute;
+    padding: 20px;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+  }
+  #nav-items {
+    display: none;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #nav-rightside.active {
+    background-color: white;
+    z-index: 100;
+  }
+
+  #nav-items.active {
+    display: flex;
+  }
+
+  #nav-items.active :hover {
+    background-color: #dab7a3;
+  }
+
+  #home-btn.active {
+    display: block;
+  }
+
+  #nav-toggle.active .bar:nth-child(1) {
+    opacity: 0;
+  }
+
+  #nav-toggle.active .bar:nth-child(2) {
+    transform: translateY(19px) rotate(45deg);
+  }
+
+  #nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  /* HERO SECTON */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    margin: -160px auto;
+  }
+
+  #hero-text {
+    font-size: 1.8rem;
+    margin: 10px auto;
+    max-width: 90vw;
+  }
+
+  .cta-btn {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #ffa800;
+  }
+
+  #catpic {
+    margin: 40px auto;
+  }
+  #circle {
+    width: 450px;
+    position: absolute;
+  }
+  #cat {
+    width: 450px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+
+   /* SECOND SECTION */
+
+  #section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    position: relative;
+  }
+
+  #section-2 h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  #person-img {
+    width: 500px;
+    border: 8px solid #ffa800;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  #pawpics {
+    display: flex;
+  }
+
+  #pawpics img {
+    width: 72px;
+  }
+  #pawpics-left {
+    position: absolute;
+    top: 22%;
+    left: -220px;
+  }
+  #pawpics-right {
+    position: absolute;
+    top: 22%;
+    right: -220px;
+  }
+
+  #reviews {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    padding: 0px 40px;
+  }
+
+  .review {
+    margin: 10px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    border: 3px solid gainsboro;
+  }
+  .quote-sign {
+    display: block;
+    font-size: 8rem;
+    margin-bottom: -60px;
+    margin-left: -20px;
+    color: darkgray;
+  }
+
+  .reviewer-details {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .reviewer-details img {
+    height: 40px;
+    margin-right: 15px;
+    border: 3px solid #ffa800;
+    border-radius: 50%;
+  }
+}
 
 /* Mobile devices */
 
@@ -69,12 +260,11 @@
 
   .hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     max-width: 100%;
-    margin: 20px auto;
+    margin: -80px auto;
   }
 
   #hero-text {
@@ -92,7 +282,7 @@
     background-color: #ffa800;
   }
 
-  #catpic{
+  #catpic {
     margin: 40px auto;
   }
   #circle {
@@ -105,113 +295,90 @@
     top: 20px;
     left: 20px;
   }
-}
 
-/* Tablet devices */
+  /* SECOND SECTION */
 
-@media (max-width: 992px) {
-  /* Nav bar */
-  #nav-toggle {
-    display: block;
-    z-index: 99;
-  }
-
-  nav {
-    padding: 20px 10px 10px 0px;
-    position: relative;
-    margin-top: 0px;
-  }
-
-  #nav-leftside a {
-    display: none;
-  }
-  #nav-rightside {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    position: absolute;
-    padding: 20px;
-    top: 0px;
-    right: 0px;
-    background-color: transparent;
-  }
-  #nav-items {
-    display: none;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
-    width: 50vw;
-    height: 100vh;
-  }
-
-  #nav-rightside.active {
-    background-color: white;
-  }
-
-  #nav-items.active {
-    display: flex;
-  }
-
-  #nav-items.active :hover {
-    background-color: #dab7a3;
-  }
-
-  #home-btn.active {
-    display: block;
-  }
-
-  #nav-toggle.active .bar:nth-child(1) {
-    opacity: 0;
-  }
-
-  #nav-toggle.active .bar:nth-child(2) {
-    transform: translateY(19px) rotate(45deg);
-  }
-
-  #nav-toggle.active .bar:nth-child(3) {
-    transform: translateY(10px) rotate(-45deg);
-  }
-
-    /* HERO SECTON */
-
-  .hero {
+  #section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    max-width: 100%;
-    margin: 20px auto;
-  }
-
-  #hero-text {
-    font-size: 1rem;
-    margin: 10px auto;
-  }
-
-  .cta-btn {
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px 0px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    background-color: #ffa800;
-  }
-
-  #catpic{
-    margin: 40px auto;
-  }
-  #circle {
-    width: 350px;
-    position: absolute;
-  }
-  #cat {
-    width: 350px;
+    justify-content: space-evenly;
+    padding: 20px 0px;
     position: relative;
-    top: 20px;
-    left: 20px;
+  }
+
+  #section-2 h1 {
+    font-weight: bolder;
+    font-size: 2.3rem;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  #person-img {
+    width: 350px;
+    border: 8px solid #ffa800;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  #pawpics {
+    display: flex;
+  }
+
+  #pawpics img {
+    width: 50px;
+  }
+  #pawpics-left {
+    position: absolute;
+    top: 22%;
+    left: -220px;
+  }
+  #pawpics-right {
+    position: absolute;
+    top: 22%;
+    right: -220px;
+  }
+
+  #reviews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 40px;
+  }
+
+  .review {
+    margin: 10px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    border: 3px solid gainsboro;
+  }
+  .review:nth-child(3),
+  .review:nth-child(4) {
+    display: none;
+  }
+  .quote-sign {
+    display: block;
+    font-size: 8rem;
+    margin-bottom: -60px;
+    margin-left: -20px;
+    color: darkgray;
+  }
+
+  .reviewer-details {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .reviewer-details img {
+    height: 40px;
+    margin-right: 15px;
+    border: 3px solid #ffa800;
+    border-radius: 50%;
   }
 }
+

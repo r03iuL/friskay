@@ -154,12 +154,12 @@ main {
 #pawpics-left {
   position: absolute;
   top: 25%;
-  left: 100px;
+  left: 2%;
 }
 #pawpics-right {
   position: absolute;
   top: 25%;
-  right: 110px;
+  right: 2%;
 }
 
 #reviews {
