@@ -10,14 +10,20 @@
   <body>
     <!-- NAVBAR -->
     <nav>
-      <div class="leftside">
+      <div id="nav-leftside">
         <ul>
           <li><img src="Assets/logo.svg" alt="logo" /></li>
           <li><a href="index.html">Home</a></li>
         </ul>
       </div>
-      <div class="rightside">
-        <ul>
+      <div id="nav-rightside">
+        <button id="nav-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+        <ul id="nav-items">
+          <li><a id="home-btn" href="index.html">Home</a></li>
           <li><a href="#">OurFood</a></li>
           <li><a href="#">Ingredients</a></li>
           <li><a href="#">Studies</a></li>
@@ -36,7 +42,7 @@
             ..for the world’s best testing cat food, sourced with only the
             finest ingredients. Made with love from the heart of Mississippi.
           </p>
-          <button id="cta-btn">Go Bonkers!</button>
+          <button class="cta-btn">Go Bonkers!</button>
         </div>
 
         <div class="catpic">
@@ -173,7 +179,7 @@
           </h1>
         </div>
         <div id="section4-right">
-          <button id="cta-btn">Get Bonkers!</button>
+          <button class="cta-btn">Get Bonkers!</button>
         </div>
       </div>
     </main>
@@ -196,5 +202,6 @@
         </ul>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
