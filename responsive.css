@@ -1,4 +1,5 @@
 /* RESPONSIVE DESIGN */
+
 /* Tablet devices */
 
 @media (max-width: 992px) {
@@ -38,6 +39,8 @@
     height: 100vh;
   }
 
+  
+
   #nav-rightside.active {
     background-color: white;
     z-index: 100;
@@ -45,6 +48,7 @@
 
   #nav-items.active {
     display: flex;
+    font-size: 4rem;
   }
 
   #nav-items.active :hover {
@@ -237,7 +241,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    padding: 40px 80px;
+    padding: 40px 20px;
     font-weight: bold;
     font-size: 1.4rem;
     color: #ffffff;
@@ -253,13 +257,16 @@
 
   footer ul li {
     margin: 0px 10px;
+    text-align: center;
+    
   }
 
   footer ul a {
     text-decoration: none;
     color: white;
-    padding: 0px;
+    padding: 10px;
   }
+  
 
   footer ul a:hover {
     background-color: #b3a9a3;
@@ -267,7 +274,11 @@
   }
 
   .footer-leftside {
-    margin-left: -50px;
+    margin-left: -40px;
+  }
+
+  .footer-rightside {
+    margin-left: -40px;
   }
 }
 
@@ -318,6 +329,7 @@
 
   #nav-items.active {
     display: flex;
+    font-size: 2rem;
   }
 
   #nav-items.active :hover {
@@ -570,7 +582,7 @@
   footer ul a {
     text-decoration: none;
     color: white;
-    padding: 0px;
+    padding: 5px;
   }
 
   footer ul a:hover {
@@ -581,7 +593,7 @@
   .footer-leftside {
     display: none;
   }
-  .footer-leftside {
-    display: none;
+  .footer-rightside {
+    margin-left: -35px;
   }
 }
