@@ -272,6 +272,7 @@ main {
   display: flex;
   margin-top: 100px;
   padding: 0px 40px;
+  
 }
 
 .review {
@@ -280,6 +281,12 @@ main {
   font-size: 1.5rem;
   padding: 20px 20px;
   border: 3px solid gainsboro;
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.review:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 .quote-sign {
   display: block;
