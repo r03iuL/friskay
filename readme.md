@@ -9,7 +9,7 @@
 
 ## 🌐 Live Demo
 
-[Live Here](https://r03iul.github.io/friskay/)
+[Live Here](https://friskay1.netlify.app/)
 
 ---
 
