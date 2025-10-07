@@ -1,3 +1,4 @@
+![Screenshot](/Assets/Screenshot.png)
 # 🐾 Friskay
 
 **Friskay** is a responsive landing page for a fictional pet brand - clean, simple, and mobile-friendly. It demonstrates a modern, lightweight front-end design built with **HTML**, **CSS**, and **JavaScript**, focusing on responsive layouts, navigation interactivity, and accessibility.
