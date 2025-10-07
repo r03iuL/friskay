@@ -219,7 +219,9 @@ main {
 /* Animation */
 /* Paw blink animation */
 @keyframes blink {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     opacity: 1;
   }
   40% {
@@ -229,10 +231,10 @@ main {
 
 /* Apply animation to all paws, with different delays */
 #pawpics-left img:nth-child(1) {
- animation: blink 5s infinite 0.3s;
+  animation: blink 5s infinite 0.3s;
 }
 #pawpics-left img:nth-child(2) {
-  animation: blink 5s infinite 0.9s; 
+  animation: blink 5s infinite 0.9s;
 }
 #pawpics-left img:nth-child(3) {
   animation: blink 5s infinite;
@@ -249,13 +251,13 @@ main {
 
 /* Repeat for right paw group with different delays */
 #pawpics-right img:nth-child(1) {
-   animation: blink 5s infinite 0.6s; 
+  animation: blink 5s infinite 0.6s;
 }
 #pawpics-right img:nth-child(2) {
   animation: blink 5s infinite 1.2s;
 }
 #pawpics-right img:nth-child(3) {
-  animation: blink 5s infinite; 
+  animation: blink 5s infinite;
 }
 #pawpics-right img:nth-child(4) {
   animation: blink 5s infinite 1.5s;
@@ -267,12 +269,10 @@ main {
   animation: blink 5s infinite 0.3s;
 }
 
-
 #reviews {
   display: flex;
   margin-top: 100px;
   padding: 0px 40px;
-  
 }
 
 .review {
@@ -281,12 +281,12 @@ main {
   font-size: 1.5rem;
   padding: 20px 20px;
   border: 3px solid gainsboro;
-   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .review:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .quote-sign {
   display: block;
@@ -326,6 +326,17 @@ main {
 #cat-in-bowl {
   width: 800px;
   z-index: 2;
+  animation: popCat 5s ease-out infinite;
+}
+
+@keyframes popCat {
+  0%,
+  100% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
 #section3-content {
   background-color: #e89058;
@@ -358,6 +369,16 @@ main {
   border: 3px solid #895f46;
   background-color: #a87353;
   transform: rotate(-10deg);
+  animation: rotatePop 5s ease-out infinite;
+}
+@keyframes rotatePop {
+  0%,
+  100% {
+    transform: rotate(-10deg) scale(0.7);
+  }
+  50% {
+    transform: rotate(-10deg) scale(.8);
+  }
 }
 .fact p {
   margin-left: 30px;
