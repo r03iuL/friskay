@@ -196,7 +196,10 @@ main {
   margin-top: 40px;
   padding: 10px;
   border-radius: 50%;
+ 
 }
+
+
 
 #pawpics {
   display: flex;
@@ -407,7 +410,7 @@ main {
   transform: translateX(0);
   animation: chaos 1.8s infinite;
 }
-
+/* Animatiion  */
 .disoriented span:nth-child(1) { animation-delay: 0s; }
 .disoriented span:nth-child(2) { animation-delay: 0.1s; }
 .disoriented span:nth-child(3) { animation-delay: 0.2s; }
@@ -476,4 +479,20 @@ footer ul a:hover {
 
 .footer-leftside ul {
   align-items: center;
+}
+
+
+.autoshow-animation{
+ animation:autoShow both;
+  animation-timeline: view(75% 0%);
+}
+
+@keyframes autoShow {
+  from{
+    opacity: 0;
+    transform: translateY(200px) scale(0.1);
+  }to{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
