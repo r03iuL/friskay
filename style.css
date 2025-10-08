@@ -88,14 +88,13 @@ main {
 }
 
 .maintext {
-  
   animation: fadeInHero 3s ease forwards;
 }
 
 @keyframes fadeInHero {
-  0%{
+  0% {
     opacity: 0;
-  transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   50% {
     opacity: 1;
@@ -199,14 +198,11 @@ main {
 
 #person-img {
   width: 400px;
-  border: 8px solid #ffa800;
+  border: 8px solid #e89058;
   margin-top: 40px;
   padding: 10px;
   border-radius: 50%;
- 
 }
-
-
 
 #pawpics {
   display: flex;
@@ -294,9 +290,38 @@ main {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.review:nth-child(1) {
+  animation: liftAndHold 10s infinite;
+  animation-delay: 0s;
+}
+.review:nth-child(2) {
+  animation: liftAndHold 10s infinite;
+  animation-delay: 2s;
+}
+.review:nth-child(3) {
+  animation: liftAndHold 10s infinite;
+  animation-delay: 4s;
+}
+.review:nth-child(4) {
+  animation: liftAndHold 10s infinite;
+  animation-delay: 6s;
+}
+
+@keyframes liftAndHold {
+  0%,
+  30%,
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+  }
+  15% {
+    transform: translateY(-30px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .review:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 3px solid #e89058;
 }
 .quote-sign {
   display: block;
@@ -387,7 +412,7 @@ main {
     transform: rotate(-10deg) scale(0.7);
   }
   50% {
-    transform: rotate(-10deg) scale(.8);
+    transform: rotate(-10deg) scale(0.8);
   }
 }
 .fact p {
@@ -413,18 +438,32 @@ main {
 
 .disoriented span {
   display: inline-block;
-  margin-right:-20px;
+  margin-right: -20px;
   transform: translateX(0);
   animation: chaos 1.8s infinite;
 }
 /* Animatiion  */
-.disoriented span:nth-child(1) { animation-delay: 0s; }
-.disoriented span:nth-child(2) { animation-delay: 0.1s; }
-.disoriented span:nth-child(3) { animation-delay: 0.2s; }
-.disoriented span:nth-child(4) { animation-delay: 0.3s; }
-.disoriented span:nth-child(5) { animation-delay: 0.4s; }
-.disoriented span:nth-child(6) { animation-delay: 0.5s; }
-.disoriented span:nth-child(7) { animation-delay: 0.6s; }
+.disoriented span:nth-child(1) {
+  animation-delay: 0s;
+}
+.disoriented span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.disoriented span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.disoriented span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.disoriented span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.disoriented span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.disoriented span:nth-child(7) {
+  animation-delay: 0.6s;
+}
 
 @keyframes chaos {
   0% {
@@ -488,17 +527,17 @@ footer ul a:hover {
   align-items: center;
 }
 
-
-.autoshow-animation{
- animation:autoShow both;
+.autoshow-animation {
+  animation: autoShow both;
   animation-timeline: view(75% 0%);
 }
 
 @keyframes autoShow {
-  from{
+  from {
     opacity: 0;
     transform: translateY(200px) scale(0.1);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
