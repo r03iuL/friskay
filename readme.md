@@ -5,13 +5,13 @@
 
 > 🐾 _**“Friskay, because every cat deserves the purrfect website.”**_
 
----
+
 
 ## 🌐 Live Demo
 
 [Live Here](https://friskay1.netlify.app/)
 
----
+
 
 ## 🧩 Features
 
@@ -20,8 +20,6 @@
 - 🐈 **Engaging Hero Section** — Visual cat-themed design.
 - 💬 **Customer Reviews** — Grid and stacked layouts for different viewports.
 - ⚡ **No Dependencies** — 100% vanilla HTML, CSS, and JS.
-
----
 
 ## 🏗️ Project Structure
 
@@ -37,7 +35,7 @@ friskay/
 
 ```
 
----
+
 
 ## 🚀 Getting Started
 
@@ -47,7 +45,7 @@ friskay/
 git clone https://github.com/r03iuL/friskay.git
 ```
 
-### 2. Open in VS Code (or any IDE)
+### 2. Open in VS Code or any IDE
 
 ```bash
 cd friskay
@@ -56,11 +54,13 @@ code .
 
 ### 3. Run locally
 
-Just open `index.html` in your browser — no build step required.
+Just open `index.html` in your browser - no build step required.
 
----
 
 ## 🧰 Technologies Used
+<div align="center">
+
+
 
 | Tech                  | Purpose                            |
 | --------------------- | ---------------------------------- |
@@ -69,11 +69,11 @@ Just open `index.html` in your browser — no build step required.
 | **JavaScript**        | Interactive navigation             |
 | **Responsive Design** | Media queries for all screen sizes |
 
----
+</div>
+
 
 ## 🧼 Future Improvements
 
-- Add CSS transitions for smoother menu animations
 - Implement a dark mode
 
 ---
